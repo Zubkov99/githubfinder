@@ -10,8 +10,6 @@ import {extractLocalUser} from "./utils/extract-local-user";
 
 const BASE_URL = "https://api.github.com/users/"
 
-//TODO:усовершенствовать : добавить ссылку на профиль
-
 function App() {
   const [user, setUser] = useState<LocalGithubUser | null>(defaultUser);
   const fetchUser = async (userName: string) => {
